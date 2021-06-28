@@ -156,16 +156,18 @@ class FragGenie():
         if flag_del_temp_file:
             filename = ''.join([input_path, input_filename])
             if os.path.isfile(filename):
-                print('removing "{}"' .format(filename))
+                if verbose:
+                    print('Removing "{}"' .format(filename))
                 os.remove(filename)
             filename = ''.join([output_path, output_filename])
             if os.path.isfile(filename):
-                print('removing "{}"' .format(filename))
+                if verbose:
+                    print('Removing "{}"' .format(filename))
                 os.remove(filename)
 
 
         return fraggenie
-    #------------------------------------------------------
+    
 if __name__ == '__main__':
     
     fraggenie = FragGenie()
