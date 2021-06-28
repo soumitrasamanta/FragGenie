@@ -29,3 +29,9 @@ SMILES string representations of the chemicals of interest.
 options are `METFRAG_FORMULAE` which generates fragment formulae and
 `METFRAG_BROKEN_BONDS` which generates a list of bonds broken for each fragment.
 Any combination of these three parameters may be specified.
+
+# [Python helper:](https://github.com/soumitrasamanta/FragGenie/blob/master/fragment.py)
+
+Call [smiles2fraggenie](https://github.com/soumitrasamanta/FragGenie/blob/master/fragment.py#L91) and [smiles2fraggenie_csv](https://github.com/soumitrasamanta/FragGenie/blob/master/fragment.py#L44) from [FragGenie](https://github.com/soumitrasamanta/FragGenie/blob/master/fragment.py) to calculate fragment directly using list of SMILES and from a `csv` file within your `python` script.
+
+
